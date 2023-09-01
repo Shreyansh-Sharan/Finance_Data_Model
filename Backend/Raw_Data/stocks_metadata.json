@@ -1,0 +1,22 @@
+{
+    "users": [
+      {
+        "username": "Nikhil",
+        "access": "Full",
+        "stocks_requested": ["AAPL", "GOOGL", "AMZN"],
+        "access_level": 3
+      },
+      {
+        "username": "Shreyansh",
+        "access": "Full",
+        "stocks_requested": ["TSLA", "MSFT"],
+        "access_level": 2
+      },
+      {
+        "username": "Ragesh",
+        "access": "Full",
+        "stocks_requested": ["NFLX", "FB"],
+        "access_level": 1
+      }
+    ]
+  }
