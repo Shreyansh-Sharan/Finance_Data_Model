@@ -16,7 +16,7 @@ def add_years(d, years):
 
 d = date(2023,9,8)  
 start_date = (add_years(d,-5))
-print(start_date)
+print("Start_date is: ", start_date)
 # start_date = datetime.strptime(start_date, "%m-%d-%y")
 
 base_date = start_date
@@ -28,7 +28,7 @@ Day1 = start_date
 def date_binning (start_date,Day1):
     while start_date < d:
         
-        Day7 = Day1 + datetime.timedelta(days=7)
+        Day7 = Day1 + datetime.timedelta(days=6)
 
         listday.append([Day1,Day7])
         # print(listday)
@@ -38,9 +38,9 @@ def date_binning (start_date,Day1):
     return listday
 
 test =  date_binning(start_date,Day1)    
-print(listday)
+print("Entire List of generated date field is: ", listday)
 
 print(test[-1][1] > d)
 diff = test[-1][1] - d
-print(diff, type(diff), test[-1][1] - datetime.timedelta(days = diff.days) )
+print("Date Difference is: ",diff," Type is:", type(diff), "end date should be ",test[-1][1] - datetime.timedelta(days = diff.days) )
 # print(test)
